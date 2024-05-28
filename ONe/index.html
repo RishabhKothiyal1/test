@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for songs, artists, albums..." id="searchInput">
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="results" id="results"></div>
+        <div class="back-button">
+            <button id="backButton">Back</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
